@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    color-scheme: dark;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+}
+
+.gamescreen{
+    width: auto;
+    height: auto;
+    background-color: rgb(67, 68, 71);
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.options{
+    width: 175px;
+    height: 175px;
+    background-color: #FAFAFA;
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+
+.column2, .column3{
+    margin-left: 10px;
+}
+
+.down{
+    margin-top: 10px;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+}
+
+.title{
+    color: #FAFAFA;
+    font-size: 70px;
+    position: absolute;
+    margin-top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.player1box{
+    width: 200px;
+    height: 250px;
+    background-color: #FAFAFA;
+    position: absolute;
+    top:55%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    text-align: center;
+    color: rgb(39, 39, 39);
+    border: solid #98938d 5px;
+}
+
+.player2box{
+    width: 200px;
+    height: 250px;
+    background-color: #FAFAFA;
+    position: absolute;
+    top:55%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    text-align: center;
+    color: rgb(39, 39, 39);
+    border: solid #98938d 5px;
+}
+
+.playerText{
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: 900;
+    
+}
+
+.scoreText{
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 900;
+   
+    
+}
+
+.imagesmall{
+    width: 20%;
+    height: 20%;
+    position: relative;
+    top: 5px;
+}
+
+.overlay{
+    
+    width: 545px;
+    height: 545px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0, 0, 0);
+    opacity: 0.7;
+    text-align: center;
+    display: none;
+    
+}
+
+.arrowimage{
+    width: 40%;
+    height: 40%;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+.arrowimage:hover{
+    width: 43%;
+    height: 43%;
+    transition: 0.5s ease-out;
+}
+
+.loadText{
+    font-size: 54px;
+    margin-top: 20%;
+}
+
+@media screen and (max-width: 1250px){
+    .player1box, .player2box{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 760px){
+    .title{
+        font-size: 60px;
+    }
+    
+}

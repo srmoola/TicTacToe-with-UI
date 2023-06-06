@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>TicTacToe</title>
+</head>
+<body>
+
+    <h1 class="title">Tic Tac Toe</h1>
+
+    <div class="player1box">
+        <p class="playerText">Player 1</p>
+        <p id = "score1" class="scoreText">Score: 0</p>
+        <p class="scoreText">Turn: <img id = "scoreText" class="imagesmall" src="images/green.png"></p>
+
+    </div>
+
+    <div class="player2box">
+        <p class="playerText">Player 2</p>
+        <p id = "score2" class="scoreText">Score: 0</p>
+        <p class="scoreText">Turn: <img id = "scoreText2" class="imagesmall" src="images/red.png"></p>
+
+    </div>
+    
+    
+    <div class="gamescreen">
+
+        <div class="column1">
+        <div img id="cell1div" class="options" onclick="cell1()"><img id="cell1" class = "image" src="images/question.png" alt="image"></div>
+        <div img id="cell2div" class="options down"  onclick="cell2()"><img id="cell2" class = "image" src="images/question.png" alt="image"></div>
+        <div img id="cell3div" class="options down"  onclick="cell3()"><img id="cell3" class = "image" src="images/question.png" alt="image"></div>
+        </div>
+
+        <div class="column2">
+        <div img id="cell4div" class="options"  onclick="cell4()"><img id="cell4" class = "image" src="images/question.png" alt="image"></div>
+        <div img id="cell5div" class="options down"  onclick="cell5()"><img id="cell5" class = "image" src="images/question.png" alt="image"></div>
+        <div img id="cell6div" class="options down"  onclick="cell6()"> <img id="cell6" class = "image" src="images/question.png" alt="image"></div>
+        </div>
+
+        <div class="column3">
+        <div img id="cell7div" class="options"  onclick="cell7()"><img id="cell7" class = "image" src="images/question.png" alt="image"></div>
+        <div img id="cell8div" class="options down"  onclick="cell8()"><img id="cell8" class = "image" src="images/question.png" alt="image"></div>
+        <div img id="cell9div" class="options down"  onclick="cell9()"><img id="cell9" class = "image" src="images/question.png" alt="image"></div>
+        </div>
+        
+    </div>
+    <div id = "overlay" class="overlay">
+        <h1 id = "loadText" class="loadText">Next Round</h1> 
+        <img onclick = "resetBoard()" class = "arrowimage" src="images/arrow.png">
+    </div>
+    
+    <script src="checks.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
